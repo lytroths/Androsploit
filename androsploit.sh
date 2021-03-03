@@ -17,7 +17,7 @@ n="n"
 e="ENTER"
 #ROOT PRIVILEGIES
 if [[ $EUID -ne 0 ]]; then
-        echo -e "	$yellow[!]$white execute program as root $yellow[!]$nc"
+        echo -e "	$yellow[!]$white execute program as root are you drunk? $yellow[!]$nc"
         echo -e "	$green Type$white sudo ./androploit.sh $green :)$nc"
         exit 1
 fi
